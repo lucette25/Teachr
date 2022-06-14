@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Form,Button } from 'react-bootstrap';
 
 
-const Formulaire = ({ addEmployee}) =>{
+const TeacherForm = ({ addEmployee}) =>{
   const [lastName,setLastName]=useState('')
   const [firstName,setFirstName] = useState('')
   const [email,setEmail] = useState('')
@@ -49,4 +49,4 @@ const Formulaire = ({ addEmployee}) =>{
 
 
 
-export default Formulaire
+export default TeacherForm

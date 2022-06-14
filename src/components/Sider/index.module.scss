@@ -1,0 +1,34 @@
+.Sider{
+    width: 25%;
+    height: 100vh;
+    max-width: 300px;
+    background-color: #F3F5FB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;//utiliser tout l'espace disponible
+
+    .Logo{
+        background-image: url("../../../public/images/teachr.png");
+        background-repeat: no-repeat;
+        background-size: contain;//ne pas perder le ratio et la qualité de l'image
+        width: 80%;
+        height: auto;
+        min-height: 200px;
+        margin: 2rem auto;
+    
+     }
+    .Nav{
+        font-size: 1.3rem;
+    }
+    .Book{
+        background-image: url("../../../public/images/books.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;//ne pas perder le ratio et la qualité de l'image
+        width: 80%;
+        height: auto;
+        min-height: 180px;
+        margin: 2rem auto;
+    }
+}
+

@@ -1,38 +1,27 @@
-import { useState, useEffect } from 'react'
-import userService from './services/users'
-import Search from './components/Search'
-import Formulaire from './components/Form'
-import Teacher from './components/Teacher'
-  const App = () => {
 
+
+import React from 'react'
+import Content from './components/Content'
+import Sider from './components/Sider'
+import styles from './index.module.scss'
+import { useState,useEffect } from 'react'
+import userService from './services/users'
+
+const App = () => {
   const [cours,setCours]=useState('')
-  const [users, setUsers] = useState([])
+   const [users, setUsers] = useState([])
   useEffect(() => {
     userService.getAll().then(users =>
       setUsers( users.data )
-    )
-  }, [])
-  
-  
-
-  
-
+     )
+   }, [])
+  const nav=[{status:true,content:'Votre demande'},
+  {status:false,content:'Nos propositions'},
+  {status:false,content:'Paiement'}]
   return (
-    <div>
-      <h2>Teach’r </h2>
-      <Search value={cours} handleChange={({ target }) => setCours(target.value)}/>
-     
-      <h5>Les Teach’rs {''? cours==='' : ` ${cours}`} qui pourraient vous correspondre</h5>
-
-          {console.log('cours',cours)}
-          { users.map(user =>
-        <div key={user.id}>
-         <Teacher teacher={user}/>
-        </div>
-      )}
-            <Formulaire />
-
-
+    <div className={styles.App}>
+            <Sider nav={nav}/>
+            <Content/>
     </div>
   )
 }
