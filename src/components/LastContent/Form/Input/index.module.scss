@@ -1,0 +1,38 @@
+
+    .Col{
+
+        background-color: #F3F5FB;
+        padding: 0.2rem;
+        margin-bottom: 155rem auto;
+        margin-left:10%;
+        margin-right:10%;
+        margin-bottom:10%;
+
+        height: auto;
+        width: 100%;
+        height: auto;
+        min-height: 6rem;
+        justify-content: space-between;//utiliser tout l'espace disponible
+
+
+        .Hide{
+            background-image: url("../../../../../public/images/show-pw.png");
+            width: 80%;
+            box-sizing: border-box;
+            border: px solid #ccc;
+            border-radius: 4px;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-position: 98%;
+            background-size: contain;//ne pas perder le ratio et la qualité de l'image
+            height: auto;
+            margin: 1rem auto;
+            
+        
+         }
+
+        
+
+    }
+
+    

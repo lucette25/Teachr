@@ -8,23 +8,21 @@ export default function Content({teachers}) {
   const [from,setFrom]=useState(0)
 
   const teacherToShow=teachers.slice(from,from+3)
-  console.log('from',from)
 
   
 
   return (
     <div className={styles.Content}>
-        <h5>En quelle matière avez vous besoin d'aide ?</h5>
-        <input   
-          className={styles.Search}
-          type="text"
-          value={cours}
-          placeholder='SVT, Anglais, piano...'
-          onChange={({ target }) =>  setCours(target.value)} />
-          
-                  
-
-        <h5>Les Teach’rs {''? cours==='' : ` ${cours}`} qui pourraient vous correspondre</h5>
+        <div>
+          <h5 className={styles.Title}>En quelle matière avez vous besoin d'aide ?</h5>
+          <input   
+            className={styles.Search}
+            type="text"
+            value={cours}
+            placeholder='SVT, Anglais, piano...'
+            onChange={({ target }) =>  setCours(target.value)} />
+        <h5 className={styles.Title}>Les Teach’rs {''? cours==='' : ` ${cours}`} qui pourraient vous correspondre</h5>
+        </div>
         <div className={styles.Teachers}>
             {teacherToShow && teacherToShow.map((teacher,index)=>{
                 return(
@@ -36,9 +34,9 @@ export default function Content({teachers}) {
             })}
         </div>
         <div >
-        <button  id='next' onClick={()=>setFrom(from===0?from:(from-1))}>PRECEDENT</button>
+        <button  id='next' className={styles.Button}  onClick={()=>setFrom(from===0?from:(from-1))}>PRECEDENT</button>
 
-        <button  id='next' onClick={()=>setFrom(from===teachers.length-3?from:from+1)}>SUIVANT</button>
+        <button  id='next' className={styles.Button} onClick={()=>setFrom(from===teachers.length-3?from:from+1)}>SUIVANT</button>
 
         </div>
 
