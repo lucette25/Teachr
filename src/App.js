@@ -8,7 +8,6 @@ import { useState,useEffect } from 'react'
 import userService from './services/users'
 
 const App = () => {
-  const [cours,setCours]=useState('')
    const [users, setUsers] = useState([])
   useEffect(() => {
     userService.getAll().then(users =>
@@ -21,7 +20,7 @@ const App = () => {
   return (
     <div className={styles.App}>
             <Sider nav={nav}/>
-            <Content/>
+            <Content teachers={users}/>
     </div>
   )
 }
