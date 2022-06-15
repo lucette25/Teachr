@@ -1,1 +1,2 @@
-Teachr
+Teachr est une application  application de mise en relation entre parents et professeurs pour des cours particuliers, à domicile ou à distance.
+Il s'agit d'une application front end réaliser avec du reactJs ET DU SCSS
