@@ -7,22 +7,20 @@ export default function TeacherCard({teacher}) {
     <div className={styles.TeacherCard}>
       <div className={styles.Image}></div>
 
-      <div className={styles.Infos} >
         <div className={styles.Content}>
-            <h4><b> {teacher.first_name} { teacher.last_name}</b></h4> 
+        <h4 style={{"textAlign":"center"}}><b> {teacher.first_name} { teacher.last_name}</b></h4> 
             <div className={styles.Start}></div>
-
             <p><FaGraduationCap/> HEC, 1ère année</p>
             <p><FaComments/> Bilingue</p> 
             <p><FaCheckCircle/> Diplôme vérifié</p> 
             <p><FaMapMarkerAlt/> Paris</p> 
- 
-        </div>
 
-      </div>
+      </div >
+      <div className={styles.B}>
       <button  className={styles.Button} id='next'>CHOISIR</button>
 
-    </div>
+      </div>
+      </div>
 
   )
 }

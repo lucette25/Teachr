@@ -3,7 +3,9 @@
     align-items: center;
     margin: 20px;
     height: auto;
-    min-height: 30%;
+    max-height: 60vh;
+    position: relative;
+    
     
 
 
@@ -18,27 +20,19 @@
         border-radius: 150px;
         min-width: 30px;
         background-size : contain;
-        display : inline-block;
         width : 5rem; height : 5rem;
         border: none;
 
     }
-    .Infos{
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        height: 100%;
-        align-content: center;
-        align-content: center;
-
-    }
-
+   
     .Content{
         top:2rem;
         padding: 2rem; 
         height: 100%;
         align-content: center;
+        background-color: var( --siderColor);
 
-    }
+     }
     .Start{
         background-image: url("../../../../public/images/starts.webp");
         background-repeat: no-repeat;
@@ -48,15 +42,26 @@
         min-height: 30px;
 
     }
+
+    .B{
+       height: auto;
+        min-height: 30px;
+        left:30%; bottom:15px; 
+        position:relative;
+        border-radius: 150px;
+        min-width: 30px;
+        background-size : contain;
+        width : 5rem; height : 5rem;
+        border: none;
+
+    }
     .Button{
         background-color: var(--blue);
         border-radius: 18px;
-        margin-left: 4rem;
         height: auto;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        min-height: 30px;
-        position:relative;
+        padding: 0 1rem 0rem  1rem;
+        min-height: 2rem;
+        
      }
 
 }

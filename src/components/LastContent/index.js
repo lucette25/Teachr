@@ -9,7 +9,7 @@ export default function LastContent({teachers}) {
 
   return (
     <div className={styles.Content}>
-        <p style={{"right":"25px"}}> Vous retrouvez des difficltés? <span className={styles.Title}>Obtenez de l'aide</span></p>
+        <p style={{"textAlign":"right"}}> Vous retrouvez des difficltés? <span className={styles.Title}>Obtenez de l'aide</span></p>
         <h5 className={styles.Title}>Presque fini !</h5>
         <p>Une fois que des Teach'r auront répondu à votre annonce, vous 
           aurez besoin d'un compte pour y répondre <span style={{"fontWeight": "bolder"}}> Prenons de l'avance !</span>

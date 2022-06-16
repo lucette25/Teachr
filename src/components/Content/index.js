@@ -13,7 +13,6 @@ export default function Content({teachers}) {
 
   return (
     <div className={styles.Content}>
-        <div>
           <h5 className={styles.Title}>En quelle matière avez vous besoin d'aide ?</h5>
           <input   
             className={styles.Search}
@@ -22,7 +21,6 @@ export default function Content({teachers}) {
             placeholder='SVT, Anglais, piano...'
             onChange={({ target }) =>  setCours(target.value)} />
         <h5 className={styles.Title}>Les Teach’rs {''? cours==='' : ` ${cours}`} qui pourraient vous correspondre</h5>
-        </div>
         <div className={styles.Teachers}>
             {teacherToShow && teacherToShow.map((teacher,index)=>{
                 return(
