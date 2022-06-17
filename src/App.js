@@ -34,16 +34,16 @@ const App = () => {
 
   return (
     <div className={styles.App}>
-      {nav[menueItemNumber-2].status === true ?
-        <>
-          <Sider nav={nav} onClick={onClick}/>
-          <LastContent teachers={users}/>
-        </>:
-        <>
-          <Sider nav={nav} onClick={onClick}/>
-          <Content teachers={users}/>
+        {nav[menueItemNumber-2].status === true ?
+          <>
+            <Sider nav={nav} onClick={onClick}/>
+            <LastContent teachers={users}/>
+          </>:
+          <>
+            <Sider nav={nav} onClick={onClick}/>
+            <Content teachers={users}/>
         </>
-      }
+        }
            
     </div>
   )

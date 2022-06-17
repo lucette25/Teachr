@@ -3,7 +3,6 @@ import styles from './index.module.scss'
 import Item from './Item'
 
 export default function Sider({nav,onClick}) {
-    console.log('rrr',onClick)
   return (
     <div className={styles.Sider}>
         <div className={styles.Logo}></div>
