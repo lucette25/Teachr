@@ -1,4 +1,4 @@
-.Content{
+.LastContent{
     width: 75%;
     height: 100vh;
     display: flex;
@@ -7,24 +7,9 @@
 
     
 
-    .Search{
-        height: 10%;
-        background-image: url("../../../public/images/search-icon.png");
-        width: 80%;
-        box-sizing: border-box;
-        border: px solid #ccc;
-        border-radius: 4px;
-        font-size: 1rem;
-        background-color: white;
-        background-repeat: no-repeat;
-        background-position: 98%;
-        padding: 10px;
-        background-size: contain;//ne pas perder le ratio et la qualité de l'image
-        height: auto;
-        margin: 2rem auto;
-        
-    
-     }
+    .Form{
+        margin: auto;
+    }
      .Title{
          color: var(--blue);  
     }

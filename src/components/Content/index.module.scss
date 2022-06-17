@@ -1,10 +1,9 @@
 .Content{
-    width: 75%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: var(--blue); 
-    justify-content: space-between;//utiliser tout l'espace disponible
+   width: 75%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;//utiliser tout l'espace disponible
 
     
 
@@ -28,17 +27,21 @@
      }
      .Teachers{
         display: flex;
-        margin-bottom: 20%;
 
       }
       .Title{
          color: var(--blue); 
          text-align: center; 
        }
-       .Button{
-         border-radius: 18px;
-         margin-left: 30%;
-         margin-top: 0.5vh; 
+       .Buttons{
+         margin-top:1%;
+
+         .Button{
+            border-radius: 18px;
+            margin-left: 30%;
+            margin-bottom: 2%;
+         }
       }
+      
       
 }

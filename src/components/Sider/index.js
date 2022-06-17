@@ -6,6 +6,9 @@ export default function Sider({nav,onClick}) {
   return (
     <div className={styles.Sider}>
         <div className={styles.Logo}></div>
+        
+
+        
         <div className={styles.Nav}>
             {nav && nav.map((item,index)=>{
                 return(

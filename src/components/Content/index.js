@@ -20,22 +20,23 @@ export default function Content({teachers}) {
             value={cours}
             placeholder='SVT, Anglais, piano...'
             onChange={({ target }) =>  setCours(target.value)} />
-        <h5 className={styles.Title}>Les Teach’rs {''? cours==='' : ` ${cours}`} qui pourraient vous correspondre</h5>
+        <h5 className={styles.Title}>Les Teach’rs {cours==='' ? '': ` de ${cours}`} qui pourraient vous correspondre</h5>
         <div className={styles.Teachers}>
             {teacherToShow && teacherToShow.map((teacher,index)=>{
                 return(
                     <TeacherCard 
                         key={index}
                         teacher={teacher}
+                        index={index}
                     />
                 )
             })}
+            
         </div>
-        <div >
-        <button  id='next' className={styles.Button}  onClick={()=>setFrom(from===0?from:(from-1))}>PRECEDENT</button>
 
-        <button  id='next' className={styles.Button} onClick={()=>setFrom(from===teachers.length-3?from:from+1)}>SUIVANT</button>
-
+        <div className={styles.Buttons}>
+          <button  id='next' className={styles.Button}  onClick={()=>setFrom(from===0?from:(from-1))}>PRECEDENT</button>
+          <button  id='next' className={styles.Button} onClick={()=>setFrom(from===teachers.length-3?from:from+1)}>SUIVANT</button>
         </div>
 
     </div>
